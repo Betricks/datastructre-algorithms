@@ -1,0 +1,412 @@
+Data Structure :
+    > is a way to store, organize and manage infromantion or (data) in a way that allows you the (programer) to easily access or modify the values within them.
+    
+ 
+    
+Intermediate Data Structures :
+     1) Stack
+     2) Queues
+     3) LinkedList
+     4) Doubly-LinkedList
+     5) Dictionary
+     6) Hash Table
+     
+Tree Based Data Structures
+   1) Trees
+   2) Tries
+   3) Heaps
+   4) Graphs
+     
+  
+ 
+ what is Big O notation ?
+     > a way to bassicaly "Score" a data structure based on 4 criteria
+     	1. Accessing elements
+     	2. Searching for an element
+     	3. Inserting an element
+     	4. deleting an element
+     	
+
+.By Measuring Effiency how efficiently a data structure can do these 4 criteria
+	.we can create a "Report Card"
+	
+
+.A Time Complexity Equation works by inserting the size of the data-set as an integer n,
+ and returning the number of operations that needed to be conducted by the computer before 
+ the function can finish.
+
+
+. N = the Size of the Data Set ( Amount of element contained within the Data Structure )
+
+
+. We always use worth-case scenario when judging these data structures
+
+
+. the resson is colled BigO Notation becoues the synex for the Time Complexity equation include
+  a Big O and then the set of parenthesis
+
+
+6 most common Time Complexity Equations :
+	1. O(1) = O of 1
+	2. O(n) = O of n
+	3. O(log n) = O of log n
+	4. O(n log n) = O of n log n
+	5. O(n^n) = O of n power n
+	6. O(2^n) = O of 2 power n
+	
+
+
+1) the absolute best a data structure can "Score" on each criteria is O(1)
+	>> No matter what the size of your data set is, the task wil be completed in asingle instruction
+
+
+2) the next fastest type of time complexity equation os O(log n)
+	>> still provides fast completion time
+	>> Gets more efficient as the size of the data set increases
+
+
+3) the common time complexity equation efficiency equation type that's going to come up is O(n)
+	>> the last of "decent" equations
+
+
+4) the next type of equation that will come up is O(N log N)
+	>> the first which is relatively bad in terms of efficincy
+
+
+5) the last 2 types of equation are O(n^2) and O(2^n)
+	>> very bad in terms of effiecy
+	>> Exponential in structure
+
+
+
+  		 Introduction To  Data Structures
+  		 ________________________________
+  		 
+  		 
+  		 
+  		 
+  	    Random Access Data Structures
+  	    _____________________________
+ 
+. The Most Populart Random Access Data Structure :
+	1) Array
+	2) ArrayList
+  		   
+  		   
+Parallel Arrays ?
+	>> 2 or more arrays which
+		. contains the same number of elements
+		. Have corresponding values in the same position
+	>> Parrallel arrays are extremely usefull for storing different types of data about the same entity
+	
+
+. Arrays size is set of an integer that is fixed upon creation of the array 
+
+
+Deffining Array and Populate_First
+	>> int Array[] = {1,2,3,4,5};
+	
+
+Deffining Array and Populate_Later
+	>> int array_name[12];
+	>> array_name[1] = 12;
+	>> array_name[2] = 972;
+
+
+To retreive data from Array
+	>> cout << array_name[1] << endl;
+	
+
+The Array 2 Dimensional Arrays
+	> An Array with in an Array at each index is known as a two dimensional array
+	> to retreive data from two dimensional array we use collunm[index number] to row[index number]
+
+
+ArrayList fundamentally, can be thought of as a rgowing array
+ .ArrayList is Dynamic and resizable array
+ 	>>ArrayList is backed by an Array
+ 		.This makes the ArrayList have alot of similar functionality to an Array
+ 		
+
+ ArrayList Initializing
+ 	> ArrayList<integer> arrayListName = new ArrayList<integer>();
+ 	
+ 
+6 most used methods in ArrayList :
+	1) Add Method
+	2) Remove Method
+	3) Get Method
+	4) Set Method
+	5) Clear Method
+	6) toArray Method
+
+
+.Time complexity equation of ArrayList :
+	A) Accessing data = O(1)
+	B) Searching data = O(n)
+	C) Inserting data = O(n)
+	D) Deleting data = O(n)
+	
+	
+	
+        
+   
+		Sequential Access Data Structures
+		_________________________________
+		
+		
+
+. Sequential Access Data Structure can only be accessed in a particular order
+	>> Each element is dependent on the others
+	>> May only be obtainable throught those other elements
+	
+	
+. The most popular sequential Access Data Structure :
+	1) Stacks
+	2) Queues
+	3) LinkedList
+
+
+1) The Stack :
+	>> Sequential Access Data Structure in which we add elements 
+	   and remove elements accounding to the " LIFO " principle
+	. LIFO = last in first out
+	>> we add elements and remove elements at One Place the Back of the Stack
+	>> we can implement stack using {1. Array, 2. LinkedList}
+	
+. The common Stack Methods :
+	:) Push Method
+	:) Pop Method
+	:) Peek Method
+	:) Contain Method
+
+
+
+2) The Queues :
+	>> sequential access Data Structure which follows the " FIFO " methodology
+	. FIFO = first in first out
+	>> we add elements from the back of the Queue and remove elements from Front of the Queue
+	. Head = Is the Point Where the values is Inserted
+	. Tail = Is the Point Where the values is Removed 
+	
+> The most Popular Queue Methods :
+	1) Enqueue Method
+	2) Dequeue Mthod	
+	3) Peek Method
+	4) Contain Method = return true is the values in the queue or false if is not in the queue
+
+
+> The Heap :
+	>> Heap is periority queue that usues min and max heap to remove an item while normal queue uses first in first out 
+	. when you want to remove an elemebt in the periority queue you remove the root 
+	. and the root must max or min element in the periority queues
+	. so every parent node must childrent that is less than or greater than him.
+	
+	
+
+3) The LinkedList (Forward):
+	>> sequential access linear data structure in which every element is a separated object
+	   called " Node " which has 2 parts
+		A) the data
+		B) the reference (pointer) which points to the next " Node " in the List
+	
+. the common LinkedList Methods :
+	>> there are 3 different method of Adding and Removing information
+	      
+	      Adding Information In the Linked List
+	      ____________________________________
+	      
+	      1) Add to the Head Method
+	      2) Add to the Middle Method
+	      3) Add to the Tail Method
+	      
+	      
+	      Removing Information In the LinkedList
+	      _____________________________________
+	      
+	      1) Removing from the Head Method
+	      2) Removing from the Middle Method
+	      3) Removing from the Tail Method
+	      
+_________________________________________________________________________________
+		     	Adding Information In The LinkedList
+		     	++++++++++++++++++++++++++++++++++++
+	      
+1) Adding to the Head of a LinkedList
+	. Make that new Node's Pointer point to the current Head of the LinkedList
+	
+	
+2) Adding to the Middle of a LinkedList 
+	.Make the pointer of the new Node point to the Node after the location we want to inert at
+	.Set the Node before the location we want to insert at to point toward the new Node		
+
+
+3) Adding to the Tail of the linked List
+	.Make the current tail point towards the new Node you wnat to add
+	
+
+___________________________________________________________________________________
+			Removing Information In The LinkedList
+			++++++++++++++++++++++++++++++++++++++
+			
+
+1) Removing from the head of the LinkedList
+	. Set the Head Node's Pointer to a null Value
+	
+2) Removing from the Middle of the LinkedList
+	. Make the Pointer of the Node previos to the one we're removing, 
+		to now point to the Node after the one we're removing
+		
+3) Removing from the Tail of the LinkedList
+	.Set the previous tail to point towards a null value instead of the current tail
+	
+
+_________________________________________________________________________________________
+
+2.5) Doubly LinkedList :
+	>> sequential access data structure which stores data in the form of Nodes
+		. able to traverse both " Forward " and backword using pointers
+		. NEXT = that paricular Nodes pointer to the next object in the list
+		. PREVIOUS = that paricular Nodes pointer to the previous object in the list
+		
+
+
+_________________________________________________________________________________________
+			Adding Information In The Doubly-LinkedList
+			+++++++++++++++++++++++++++++++++++++++++++
+				
+1) Adding to the Head of Doubly LinkedList
+	. set the new Node next to point towards the curent head of the List
+	.take the new Node that we want to insert, and set it's previous to null
+	. set the current head's previous to point this new Node
+	
+	
+2) Adding to the Middle of the Doubly-LinkedList
+	.set the new Node's previous to point towards the Node previous to the position you want to insert at
+	.set the new Node's next to point towards the Node after the position you want to insert at
+	.set next & previous on the Node's before and after the one you're inserting to both point towards the new Node
+
+
+
+3) Adding to Tail of the Doubly-LinkedList
+	.set the next pointer of the current tail to point towards the current tail of the List
+	.set the previous of the new Node that we're adding to be pointing towards the current tail of the List
+	.make the new Node's next point towards a NULL value 
+____________________________________________________________________________________________
+			Removing Information In the Doubly-LinkedList
+			+++++++++++++++++++++++++++++++++++++++++++++
+			
+1) Removing from the Head of Doubly-LinkedList
+	. set the head Node's next to point towards a null value
+	.set the second Node's previous to also point towards a null value
+
+
+2) Removing from the Middle of Doubly-LinkedList
+	.set the Node before the one we want to remove's next to point towards the Node after the node we want to remove
+	.set the Node after the one we want to remove's previous to point towards the Node before the one we want to remove
+	.set both pointers of the Node we want to remove to point towards a null value
+	
+3) Removing from the Tail of Doubly-LinkedList 
+	.set the tail Node's previous to point towards null
+	.set second to last Node;s next to also point towards null
+	
+_____________________________________________________________________________________________
+				
+				Abstract Data Structures
+				
+			
+1) Dictionaries :
+	. are one of the most abstract data structure we'll cover
+	. thay are also colled Maps and associative arrays
+	
+. Dictionary is an abstract data structure  which stores data in the form of key/value pairs
+
+. we indez dictionaries using keys instead of anumerical index
+
+
+>>>> Dictionaries - Time Complexity Equations?
+	. Accessing data O(1)
+	. Searching data O(1)
+	. Inserting data O(1)
+	. deleting data O(1)
+	
+	
+
+	
+				Hierarchical Data
+
+1) trees :			
+. trees stores data hierarchically as opposed to linearly
+> trees is an abstract Data structure which contains a series of linked nodes connected together to from a hierarchical representation of information 
+	. each of the Node in a tree is called ' Vertices '
+	.  and what link Node's together is ' Edges '
+	. leaf Node is any Node in a tree which does not have any child Nodes
+	. Height of tree is Number of edges on the longest possible path down towards a leaf
+	. Depth Number of edges required to get from that particular node to the root node
+	
+
+2) Ties :
+	. is atree-like data structure whose nodes store letters of an alphabet in the form of charecters
+	. these are sometimes colled digital trees or prefx trees
+	. every trie will start the root node, also the root node is empty
+	>> Flaging = marking the end of a word by having it also point towards a "flag" to let the computer know that the end of the word has occured 
+	
+	
+
+
+
+3) Heaps :
+	>> is a special tree where all parent Nodes compare to their cildren Node's in some specific way by being more or less extreme
+	 	. Either greater than or less than 
+	 	. Determines where the data is stored
+	 	. Usually dependent on the parent Node's value
+	
+>> Deleting from Heaps : 
+	1) Remove the root node from the Heaps
+	2) Replace it with the node furthest to the right
+	3) " Heapify " the heap by comparing parent Node's to their children & swapping if necessary
+	
+	
+
+
+
+>> A Binary Search Tree 
+	. it must have 2 children max
+	. child to the left has a value less than or equal to itself
+	. child to the right has a value greater than or equel to itself
+	. No 2 Nodes can contain the same value
+	
+
+4) Graphs :
+	>> is nonlinear data structure consisting of Nodes and Edges
+		. Finite set of Nodes(vertices
+		. Nodes are connected by edges
+		. The Graph there is starting points
+		
+	>> There are two types of Graphs :
+	1) Directed Graphs 
+	2) UnDirected Graphs
+	
+	
+	:) Directed Graph is an ede from one node to another, the relationship exists on both sides ,
+		-- Directed Graph is used fo model a friendship in meta facebook if you send friend request to a person and that person eccepts, you're friends 
+	
+	:) UnDirected Graph is an ede from one node to another , the relationship exist only on one side,
+		-- UnDirected Graphs is used to model a flowing(flowers) in Twiter, instagram and more. you can fallow a person and see his post on your feed but he can't see yours until he fallows you.
+		
+			  
+			  
+	.Edge of the Graphs can also be weighted or unweighted
+	>> weighted edge means that the edge have vaalues while.
+	>> unweighted edge is that the edge has no weight
+	
+	. sef loop : mean that a node of that is in the graph has and edge that goes onto him self without going to another node.
+	
+	
+		. in which the direction you traverse th Nodes is not important
+		.usually indicated by lack of arrows
+		
+
+		
+	
+			THANKS FOR YOUR SUPPORT HAPPY LEARNING.🥰️
